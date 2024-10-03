@@ -1,0 +1,115 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "xrnfZjaPXk5S87V79z4Z3f",
+      "projectApiToken": "AMyrphqRffc0PUn9BRA0IIKfptyYm5aqQVjXn1pmdzzmdnmtCD42xp3ckS9hVXgpcKtrV6gdrPdlMe2PKQ",
+      "projectName": "tongyi",
+      "version": "latest",
+      "cssFilePath": "plasmic/tongyi/plasmic.module.css",
+      "components": [
+        {
+          "id": "Ym1zEpS-kVms",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "xrnfZjaPXk5S87V79z4Z3f",
+          "renderModuleFilePath": "plasmic/tongyi/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/tongyi/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/"
+        }
+      ],
+      "icons": [],
+      "images": [
+        {
+          "id": "Ue5J40fEAx4u",
+          "name": "download.png",
+          "filePath": "../public/plasmic/tongyi/images/downloadPng.png"
+        },
+        {
+          "id": "H8elAgQGffWX",
+          "name": "pumpfunicon.jpeg",
+          "filePath": "../public/plasmic/tongyi/images/pumpfuniconJpeg.jpg"
+        },
+        {
+          "id": "nTVGufya82uo",
+          "name": "telegram-svgrepo-com (1).svg",
+          "filePath": "../public/plasmic/tongyi/images/telegramSvgrepoCom1Svg.svg"
+        },
+        {
+          "id": "lBNfXKjo8LLm",
+          "name": "twitter-color-svgrepo-com.svg",
+          "filePath": "../public/plasmic/tongyi/images/twitterColorSvgrepoComSvg.svg"
+        },
+        {
+          "id": "4l5ob3sdiDFl",
+          "name": "blog_post_758152aaf8.webp",
+          "filePath": "../public/plasmic/tongyi/images/blogPost758152Aaf8Webp.webp"
+        },
+        {
+          "id": "iZXk1MSaI_mz",
+          "name": "hand-drawn-flat-design-stock-market-concept_23-2149154265.jpg",
+          "filePath": "../public/plasmic/tongyi/images/handDrawnFlatDesignStockMarketConcept232149154265Jpg.jpg"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "MGE5VMWH4oKc",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "HBR9GOACLlx2",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "bTA7ZwcFHX8d",
+        "name": "Screen",
+        "projectId": "xrnfZjaPXk5S87V79z4Z3f",
+        "contextFilePath": "plasmic/tongyi/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.331",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.331/dist/plasmic.schema.json"
+}
