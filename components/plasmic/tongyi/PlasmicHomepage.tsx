@@ -59,6 +59,8 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { PlasmicHead } from "@plasmicapp/react-web";
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic.module.css"; // plasmic-import: xrnfZjaPXk5S87V79z4Z3f/projectcss
@@ -81,6 +83,7 @@ export type PlasmicHomepage__OverridesType = {
   columns?: Flex__<"div">;
   h1?: Flex__<"h1">;
   freeBox?: Flex__<"div">;
+  pageMetadataOverride?: Flex__<typeof PlasmicHead>;
 };
 
 export interface DefaultHomepageProps {}
@@ -310,6 +313,16 @@ function PlasmicHomepage__RenderFunc(props: {
               </Stack__>
             </div>
           </section>
+          <PlasmicHead
+            data-plasmic-name={"pageMetadataOverride"}
+            data-plasmic-override={overrides.pageMetadataOverride}
+            className={classNames("__wab_instance", sty.pageMetadataOverride)}
+            description={
+              "Tongyi fans token, tongyi is an AI model like chatgpt from China"
+            }
+            image={"/plasmic/tongyi/images/tongyiPng.png"}
+            title={"Tongyi | Fans Token"}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -317,11 +330,12 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "columns", "h1", "freeBox"],
+  root: ["root", "section", "columns", "h1", "freeBox", "pageMetadataOverride"],
   section: ["section", "columns", "h1", "freeBox"],
   columns: ["columns", "h1", "freeBox"],
   h1: ["h1"],
-  freeBox: ["freeBox"]
+  freeBox: ["freeBox"],
+  pageMetadataOverride: ["pageMetadataOverride"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -332,6 +346,7 @@ type NodeDefaultElementType = {
   columns: "div";
   h1: "h1";
   freeBox: "div";
+  pageMetadataOverride: typeof PlasmicHead;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -398,6 +413,7 @@ export const PlasmicHomepage = Object.assign(
     columns: makeNodeComponent("columns"),
     h1: makeNodeComponent("h1"),
     freeBox: makeNodeComponent("freeBox"),
+    pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -74,6 +74,11 @@
           "id": "iZXk1MSaI_mz",
           "name": "hand-drawn-flat-design-stock-market-concept_23-2149154265.jpg",
           "filePath": "../public/plasmic/tongyi/images/handDrawnFlatDesignStockMarketConcept232149154265Jpg.jpg"
+        },
+        {
+          "id": "wGBnR2qsyF3b",
+          "name": "tongyi.png",
+          "filePath": "../public/plasmic/tongyi/images/tongyiPng.png"
         }
       ],
       "indirect": false,
